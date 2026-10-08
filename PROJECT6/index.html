@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <h2>Course Registration Form</h2>
+
+    <form action="#" method="POST">
+        
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="150"><label for="firstName">First Name</label></td>
+                    <td><input type="text" id="firstName" name="firstName" placeholder="Ex: Harshit"></td>
+                </tr>
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td><input type="text" id="surname" name="surname" placeholder="Ex: T"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number</label></td>
+                    <td><input type="text" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Ex: rohit@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="min 5 characters"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmPassword">Confirm Password</label></td>
+                    <td><input type="password" id="confirmPassword" name="confirmPassword" placeholder="min 5 characters"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                        <input type="radio" id="custom" name="gender" value="custom"> <label for="custom">Custom</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="">--Select--</option>
+                            <option value="in">India</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="picture">Upload Picture</label></td>
+                    <td><input type="file" id="picture" name="picture"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- Course Details Section -->
+        <fieldset>
+            <legend>Course Details</legend>
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="150"><label for="course">Select Course</label></td>
+                    <td>
+                        <select id="course" name="course">
+                            <option value="">--Select Course--</option>
+                            <option value="html">HTML & CSS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="fullstack">Full Stack Development</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Mode</td>
+                    <td>
+                        <input type="radio" id="online" name="delivery" value="online"> <label for="online">ONLINE</label>
+                        <input type="radio" id="offline" name="delivery" value="offline"> <label for="offline">OFFLINE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="comments">Comments</label></td>
+                    <td>
+                        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Enter any additional comments"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

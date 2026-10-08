@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists with Internal CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: rgb(100, 155, 100);
+            border-bottom: 2px solid darkgreen;
+            padding-bottom: 5px;
+        }
+
+        ul, ol, dl {
+            background-color: white;
+            padding: 20px 40px;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+        /* Unordered list styles */
+        .disc {
+            list-style-type: disc;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        /* Description list */
+        dt {
+            font-weight: bold;
+            color: darkblue;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        /* Nested list */
+        .nested {
+            background-color: #e8f4ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Types of HTML Lists</h1>
+
+    <!-- 1. Unordered List -->
+    <h2>1. Unordered List - Disc</h2>
+
+    <ul class="disc">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+
+    <!-- 2. Unordered List - Circle -->
+    <h2>2. Unordered List - Circle</h2>
+
+    <ul class="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <!-- 3. Unordered List - Square -->
+    <h2>3. Unordered List - Square</h2>
+
+    <ul class="square">
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+
+
+    <!-- 4. Ordered List - Numbers -->
+    <h2>4. Ordered List - Numbers</h2>
+
+    <ol type="1">
+        <li>Wake up</li>
+        <li>Brush</li>
+        <li>Breakfast</li>
+        <li>Go to college</li>
+    </ol>
+
+
+    <!-- 5. Ordered List - Capital Letters -->
+    <h2>5. Ordered List - Capital Letters</h2>
+
+    <ol type="A">
+        <li>Computer Science</li>
+        <li>Information Science</li>
+        <li>Electronics</li>
+    </ol>
+
+
+    <!-- 6. Ordered List - Small Letters -->
+    <h2>6. Ordered List - Small Letters</h2>
+
+    <ol type="a">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ol>
+
+
+    <!-- 7. Ordered List - Capital Roman -->
+    <h2>7. Ordered List - Capital Roman</h2>
+
+    <ol type="I">
+        <li>Introduction</li>
+        <li>Features</li>
+        <li>Advantages</li>
+    </ol>
+
+
+    <!-- 8. Ordered List - Small Roman -->
+    <h2>8. Ordered List - Small Roman</h2>
+
+    <ol type="i">
+        <li>Chapter One</li>
+        <li>Chapter Two</li>
+        <li>Chapter Three</li>
+    </ol>
+
+
+    <!-- 9. Description List -->
+    <h2>9. Description List</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Used to create the structure of a webpage.</dd>
+
+        <dt>CSS</dt>
+        <dd>Used to style a webpage.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Used to add functionality to a webpage.</dd>
+    </dl>
+
+
+    <!-- 10. Nested List -->
+    <h2>10. Nested List</h2>
+
+    <ul class="nested">
+        <li>Programming Languages
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </li>
+
+        <li>Web Technologies
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>

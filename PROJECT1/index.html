@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Playlists</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1b4b, #9333ea);
+            color: white;
+            margin: 0;
+            padding: 25px;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px;
+            background: #312e81;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #f9a8d4;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: #f9a8d4;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(200px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .card {
+            background: #171b40;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #818cf8;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px #a855f7;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            color: #c4b5fd;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #f9a8d4;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎧 My Favorite Playlists 🎶</h1>
+    <p>Music, videos and memories that make me happy!</p>
+</header>
+
+<section>
+    <h2>💜 About My Playlist</h2>
+    <p>
+        Music is an important part of my life. I love listening
+        to peaceful songs, watching beautiful videos and enjoying
+        amazing pictures. These are some of my favorite playlists
+        that help me relax, feel happy and enjoy my free time.
+        Every song and video gives me a special feeling!
+    </p>
+</section>
+
+<section>
+    <h2>🎵 My Favorite Audios</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=400"
+                 alt="Nature">
+            <h3>Peaceful Music</h3>
+            <audio controls>
+                <source src="https://cdn.truefilesize.com/mp3/sample-1mb.mp3"
+                        type="audio/mpeg">
+            </audio>
+            <p>Duration: 1 minute</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400"
+                 alt="Sunrise">
+            <h3>Morning Vibes</h3>
+            <audio controls>
+                <source src="https://cdn.truefilesize.com/mp3/sample-1mb.mp3"
+                        type="audio/mpeg">
+            </audio>
+            <p>Duration: 1 minute</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=400"
+                 alt="Night sky">
+            <h3>Night Music</h3>
+            <audio controls>
+                <source src="https://cdn.truefilesize.com/mp3/sample-1mb.mp3"
+                        type="audio/mpeg">
+            </audio>
+            <p>Duration: 1 minute</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400"
+                 alt="Music studio">
+            <h3>Chill Beats</h3>
+            <audio controls>
+                <source src="https://cdn.truefilesize.com/mp3/sample-1mb.mp3"
+                        type="audio/mpeg">
+            </audio>
+            <p>Duration: 1 minute</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400"
+                 alt="Stars">
+            <h3>Relaxing Sounds</h3>
+            <audio controls>
+                <source src="https://cdn.truefilesize.com/mp3/sample-1mb.mp3"
+                        type="audio/mpeg">
+            </audio>
+            <p>Duration: 1 minute</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>🎬 My Favorite Videos</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400"
+                 alt="Beach">
+            <h3>Beautiful Beach</h3>
+            <video controls ontimeupdate="if(this.currentTime>=60){this.pause();this.currentTime=60}">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=400"
+                 alt="Mountains">
+            <h3>Nature Views</h3>
+            <video controls ontimeupdate="if(this.currentTime>=60){this.pause();this.currentTime=60}">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400"
+                 alt="Ocean">
+            <h3>Ocean Waves</h3>
+            <video controls ontimeupdate="if(this.currentTime>=60){this.pause();this.currentTime=60}">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=400"
+                 alt="Landscape">
+            <h3>Beautiful Landscapes</h3>
+            <video controls ontimeupdate="if(this.currentTime>=60){this.pause();this.currentTime=60}">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400"
+                 alt="Flowers">
+            <h3>Flower Garden</h3>
+            <video controls ontimeupdate="if(this.currentTime>=60){this.pause();this.currentTime=60}">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <h3>💖 Made with Love | My Favorite Playlists 💖</h3>
+</footer>
+
+</body>
+</html>

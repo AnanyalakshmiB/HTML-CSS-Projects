@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Management System</title>
+</head>
+
+<body>
+
+    <h1>College Management System</h1>
+
+    <p>
+        This project demonstrates different HTML table concepts
+        using student, course and examination information.
+    </p>
+
+    <hr>
+
+
+    <!-- ================================================= -->
+    <!-- TABLE 1 : STUDENT DETAILS -->
+    <!-- ================================================= -->
+
+    <h2>1. Student Details</h2>
+
+    <table border="1" cellpadding="10" cellspacing="2">
+
+        <caption>
+            Student Information
+        </caption>
+
+        <thead>
+
+            <tr>
+                <th rowspan="2">Student ID</th>
+                <th rowspan="2">Student Name</th>
+                <th colspan="2">Academic Details</th>
+                <th rowspan="2">Contact</th>
+            </tr>
+
+            <tr>
+                <th>Department</th>
+                <th>Year</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+                <td>101</td>
+                <td>Ananya</td>
+                <td>ECE</td>
+                <td>4th Year</td>
+                <td>8088187109</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Rahul</td>
+                <td>CSE</td>
+                <td>3rd Year</td>
+                <td>9876543210</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Priya</td>
+                <td>ISE</td>
+                <td>4th Year</td>
+                <td>9876501234</td>
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+
+            <tr>
+                <td colspan="4">
+                    Total Students
+                </td>
+
+                <td>3</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <br><br>
+
+
+    <!-- ================================================= -->
+    <!-- TABLE 2 : COURSE AND FACULTY -->
+    <!-- ================================================= -->
+
+    <h2>2. Course and Faculty Details</h2>
+
+    <table border="1" cellpadding="10" cellspacing="2">
+
+        <caption>
+            Course Information
+        </caption>
+
+
+        <thead>
+
+            <tr>
+
+                <th scope="col">Course ID</th>
+
+                <th scope="col">Course Name</th>
+
+                <th scope="col">Faculty</th>
+
+                <th scope="col">Credits</th>
+
+                <th scope="col">Semester</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <td>C101</td>
+
+                <td>Java Programming</td>
+
+                <td rowspan="2">
+                    Dr. Kumar
+                </td>
+
+                <td>4</td>
+
+                <td>VII</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>C102</td>
+
+                <td>Database Management</td>
+
+                <td>3</td>
+
+                <td>VII</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>C103</td>
+
+                <td>Digital Electronics</td>
+
+                <td>Dr. Ravi</td>
+
+                <td>4</td>
+
+                <td>VIII</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>C104</td>
+
+                <td>Computer Networks</td>
+
+                <td>Dr. Priya</td>
+
+                <td>3</td>
+
+                <td>VIII</td>
+
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+
+            <tr>
+
+                <td colspan="3">
+                    Total Credits
+                </td>
+
+                <td colspan="2">
+                    14
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <br><br>
+
+
+    <!-- ================================================= -->
+    <!-- TABLE 3 : EXAMINATION MARKS -->
+    <!-- ================================================= -->
+
+    <h2>3. Examination Marks</h2>
+
+
+    <table border="1"
+           cellpadding="10"
+           cellspacing="2"
+           align="center">
+
+
+        <caption>
+            Semester Examination Results
+        </caption>
+
+
+        <thead>
+
+            <tr>
+
+                <th rowspan="2">Student ID</th>
+
+                <th rowspan="2">Student Name</th>
+
+                <th colspan="3">
+                    Subject Marks
+                </th>
+
+                <th rowspan="2">
+                    Total
+                </th>
+
+            </tr>
+
+
+            <tr>
+
+                <th>Java</th>
+
+                <th>DBMS</th>
+
+                <th>Digital Electronics</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <th scope="row">101</th>
+
+                <td>Ananya</td>
+
+                <td>90</td>
+
+                <td>88</td>
+
+                <td>92</td>
+
+                <td>270</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">102</th>
+
+                <td>Rahul</td>
+
+                <td>85</td>
+
+                <td>90</td>
+
+                <td>80</td>
+
+                <td>255</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">103</th>
+
+                <td>Priya</td>
+
+                <td>92</td>
+
+                <td>87</td>
+
+                <td>89</td>
+
+                <td>268</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">104</th>
+
+                <td>Vishal</td>
+
+                <td>78</td>
+
+                <td>82</td>
+
+                <td>85</td>
+
+                <td>245</td>
+
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+
+            <tr>
+
+                <td colspan="5" align="right">
+                    Class Total
+                </td>
+
+                <td>
+                    1038
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="5" align="right">
+                    Class Average
+                </td>
+
+                <td>
+                    259.5
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <br><br>
+
+
+    <!-- ================================================= -->
+    <!-- TABLE 4 : TIMETABLE -->
+    <!-- ================================================= -->
+
+    <h2>4. College Timetable</h2>
+
+
+    <table border="1"
+           cellpadding="10"
+           cellspacing="2">
+
+
+        <caption>
+            ECE 4th Year Timetable
+        </caption>
+
+
+        <thead>
+
+            <tr>
+
+                <th>Day</th>
+
+                <th>9:00 - 10:00</th>
+
+                <th>10:00 - 11:00</th>
+
+                <th>11:00 - 12:00</th>
+
+                <th>12:00 - 1:00</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody>
+
+            <tr>
+
+                <th scope="row">Monday</th>
+
+                <td>Java</td>
+
+                <td>DBMS</td>
+
+                <td rowspan="2" align="center">
+                    LAB
+                </td>
+
+                <td>Networks</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">Tuesday</th>
+
+                <td>Python</td>
+
+                <td>Java</td>
+
+                <td>Digital Electronics</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">Wednesday</th>
+
+                <td colspan="2" align="center">
+                    Project Work
+                </td>
+
+                <td>DBMS</td>
+
+                <td>Java</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">Thursday</th>
+
+                <td>Networks</td>
+
+                <td>Python</td>
+
+                <td>DBMS</td>
+
+                <td>Project</td>
+
+            </tr>
+
+
+            <tr>
+
+                <th scope="row">Friday</th>
+
+                <td colspan="4" align="center">
+                    Seminar / Workshop
+                </td>
+
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+
+            <tr>
+
+                <td colspan="5" align="center">
+                    Lunch Break: 1:00 PM - 2:00 PM
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <br>
+
+    <hr>
+
+    <h3>End of College Management System</h3>
+
+</body>
+
+</html>
+
